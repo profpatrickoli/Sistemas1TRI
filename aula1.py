@@ -1,8 +1,25 @@
 import random
-
 sorteio = random.randint(1, 10)
 print("### JOGO DA ADIVINHAÇÃO ###")
 print("Adivinhe o número que estou pensando, de 1 a 10")
-chute = input("Digite o seu chute:")
-print(sorteio)
-print(chute)
+limite_tentativas = 3
+tentativa = 1
+while (limite_tentativas >= tentativa):
+    print("Tentativa", tentativa)
+    chute = int(input("Digite o seu chute:"))
+    if (chute == sorteio):
+        print("Parabéns, você acertou!")
+    elif (chute > sorteio):
+        print("Chute um número menor!")
+    elif (chute < sorteio):
+        print("Chute um número maior!")
+    tentativa = tentativa + 1
+
+
+
+
+
+if (chute == sorteio):
+    print("Parabéns, você acertou o número! O número era", sorteio)
+if (chute != sorteio):
+    print("Você errou! O número era", sorteio)
