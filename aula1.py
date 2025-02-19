@@ -14,12 +14,3 @@ while (limite_tentativas >= tentativa):
     elif (chute < sorteio):
         print("Chute um número maior!")
     tentativa = tentativa + 1
-
-
-
-
-
-if (chute == sorteio):
-    print("Parabéns, você acertou o número! O número era", sorteio)
-if (chute != sorteio):
-    print("Você errou! O número era", sorteio)
